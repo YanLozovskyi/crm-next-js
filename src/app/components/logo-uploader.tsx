@@ -1,11 +1,11 @@
-'use client'
+'use client';
 
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
 
 export interface LogoUploaderProps
   extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'type'> {
-  label?: string
+  label?: string;
 }
 
 export default function LogoUploader({
@@ -40,5 +40,5 @@ export default function LogoUploader({
         />
       </label>
     </div>
-  )
+  );
 }

@@ -1,12 +1,12 @@
-'use client'
+'use client';
 
-import React, { Fragment } from 'react'
-import { Dialog, Transition } from '@headlessui/react'
+import React, { Fragment } from 'react';
+import { Dialog, Transition } from '@headlessui/react';
 
 export interface ModalProps {
-  children?: React.ReactNode
-  show: boolean
-  onClose: () => void
+  children?: React.ReactNode;
+  show: boolean;
+  onClose: () => void;
 }
 
 export default function Modal({ show, children, onClose }: ModalProps) {
@@ -33,5 +33,5 @@ export default function Modal({ show, children, onClose }: ModalProps) {
         </Dialog.Panel>
       </Dialog>
     </Transition.Root>
-  )
+  );
 }
